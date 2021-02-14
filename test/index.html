@@ -1,0 +1,52 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<title>List ToDo</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js" defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="header">
+		<div class="conteiner-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="header-title">List ToDo</h1>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<input type = "text" placeholder="Task" class = "header-inp header-form-task" id = "inputTask">
+				</div>
+				<div class="col-lg-2 offset-lg-1 col-md-12">
+					<span class = "span-prior">Prioritet:</span>
+					<select class = "header-form-task header-prior-select" id = "prior">
+    					<option>1</option>
+    					<option>2</option>
+    					<option>3</option>
+    					<option>4</option>
+    					<option>5</option>
+    					<option>6</option>
+    					<option>7</option>
+    					<option>8</option>
+    					<option>9</option>
+    					<option>10</option>
+    				</select>
+				</div>
+				<div class="col-lg-2 offset-lg-1 col-md-12">
+					<span onclick="addTask()" class="submit-butt" >Add Task</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tasks">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class = "tasks-list" id = "tasks">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
